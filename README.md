@@ -1,4 +1,4 @@
-# dulleswaitapi
+# Dulles Wait API
 A simple PHP JSON API to get the expected wait time at each of the two security checkpoints at Washington Dulles Airport.
 
 This simply screen scrapes data from the Airport's mobile website and serves it up as JSON.
