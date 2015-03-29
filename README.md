@@ -13,7 +13,7 @@ Example response:
             "name" : "Washington Dulles", 
             "lastUpdated": "2015-03-28 20:23:00", 
             "lastUpdatedTimestamp": 1427588580, 
-            "checkpoints": [ 
+            "checkPoints": [ 
                 { 
                     "name": "East", 
                     "wait" : 2 
@@ -35,7 +35,7 @@ The response JSON contains:
 * Airport name
 * lastUpdated is the US Eastern time that the airport last updated their website with security wait times
 * lastUpdatedTimestamp is the date above expressed as a UNIX timestamp
-* checkpoints is an array of two checkpoint objects, each containing the checkpoint name and wait time in minutes
+* checkPoints is an array of two checkpoint objects, each containing the checkpoint name and wait time in minutes
 
 This API is running here: http://dulleswaitapi.crudworks.org/
 

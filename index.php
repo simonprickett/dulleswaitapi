@@ -61,9 +61,10 @@ foreach($paras as $para) {
 // Time zone
 $dt = new DateTime($lastUpdated, new DateTimeZone('America/New_York'));
 
-$jsonOut = '{ "airports": [ { "iata": "IAD", "name" : "Washington Dulles", "lastUpdated": "' . $lastUpdated . '", "lastUpdatedTimestamp": ' . $dt->getTimestamp() . ', "checkpoints": [ { "name": "East", "wait" : ' . $eastWait . ' }, { "name": "West", "wait" : ' . $westWait . ' } ] } ] }';
+$jsonOut = '{ "airports": [ { "iata": "IAD", "name" : "Washington Dulles", "lastUpdated": "' . $lastUpdated . '", "lastUpdatedTimestamp": ' . $dt->getTimestamp() . ', "checkPoints": [ { "name": "East", "wait" : ' . $eastWait . ' }, { "name": "West", "wait" : ' . $westWait . ' } ] } ] }';
 
 // Send the response with appropriate content type
+header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 print $jsonOut;
 ?>
